@@ -16,14 +16,31 @@ Gritando --> 'HOLA, PEPA.'
 
 Saludar a la pareja (pasar dos nombres)
 
-## Requirements
+## Requisito 5
+
+Sin nombre --> Hola, Mundo.
+Evaristo --> Hola, Evaristo.
+BARTOLO --> HOLA, BARTOLO!
+Ana, Bartolo --> Hola, Ana y Bartolo
+
+## Requisito 6
+
+Ana, Bartolo, Carlota --> Hola, Ana, Bartolo, y Carlota
+
+## Requisito 7
+
+Ana, BARTOLO --> 
+
+## Configuration
+
+### Requirements
 
 You have to be node and npm installed 
 
-## Install dependencies
+### Install dependencies
 
 Run `npm install`
 
-## Execute tests
+### Execute tests
 
 Run `npm test`
