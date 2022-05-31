@@ -30,4 +30,9 @@ describe('The greeting machine', () => {
 
     expect(greeting).toBe('HOLA, PEPA.')
   })
+  it('Should greet a couple', () => {
+    const greeting = greetingMachine.greet('Ana, Bartolo')
+
+    expect(greeting).toBe('Hola, Ana y Bartolo.')
+  })
 })

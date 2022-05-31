@@ -12,6 +12,10 @@ Saludo a un usuario anónimo
 
 Gritando --> 'HOLA, PEPA.'
 
+## Requisito 4
+
+Saludar a la pareja (pasar dos nombres)
+
 ## Requirements
 
 You have to be node and npm installed 

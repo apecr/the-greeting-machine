@@ -18,7 +18,9 @@ class GreetingMachine {
   }
 
   getGreetingByName(name){
-    return `Hola, ${name}.`
+    const finalName = name.split(', ')
+                        .reduce((acc, name) => `${acc} y ${name}`)
+    return `Hola, ${finalName}.`
   }
 
   isAnonymous(name){
