@@ -36,11 +36,29 @@ class GreetingMachine {
       const namesUpperCase = name.split(', ').filter(name => name.toUpperCase() == name)
       console.log('namesLowerCase', namesLowerCase)
       console.log('namesUpperCase', namesUpperCase)
+      console.log(namesUpperCase.reduce(this.reduceGroupScreaming, 'Y HOLA'))
+      console.log(namesLowerCase.reduce(this.reduceGroupNormalLoud, 'Hola'))
       greeting = `Hola, ${finalName}`  
+      if (namesLowerCase.length >= 1 && namesUpperCase.length >= 1){
+        return `${namesLowerCase.reduce(this.reduceGroupNormalLoud, 'Hola')} ${namesUpperCase.reduce(this.reduceGroupScreaming, 'Y HOLA')}`
+      }
     }
     return `${greeting}${this.getLastCharForGreeting(name)}`
   }
   
+  reduceGroupScreaming(acc, name, currentIndex, names){
+    if (currentIndex == names.length -1){
+      return `${acc} Y ${name}!`
+    }
+    return `${acc}, ${name}`
+  }
+
+  reduceGroupNormalLoud(acc, name, currentIndex, names){
+    if (currentIndex == names.length -1){
+      return `${acc} y ${name}.`
+    }
+    return `${acc}, ${name}`
+  }
 
   reduceGroupNames(acc, name, currentIndex, names) {
     if (currentIndex == names.length - 1){
