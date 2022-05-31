@@ -1,5 +1,13 @@
 # Greeting Machine
 
+## Requisito 1
+
+Saludo por nombre
+
+## Requisito 2
+
+Saludo a un usuario anónimo
+
 ## Requisito 3
 
 Gritando --> 'HOLA, PEPA.'
